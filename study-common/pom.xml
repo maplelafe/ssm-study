@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>study-parent</artifactId>
+        <groupId>com.oschina</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ### groupId,version直接继承自Parent,packaging默认为jar ### -->
+    <!-- <groupId>com.oschina</groupId> -->
+    <artifactId>study-common</artifactId>
+    <!-- <version>1.0-SNAPSHOT</version> -->
+    <!-- <packaging>jar</packaging> -->
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+
+            <!-- 版本-version,已由Parent进行约定,可以省略 -->
+            <!-- <version>${junit.version}</version> -->
+
+            <!-- 包类型-type,默认为jar -->
+            <!-- <type>jar</type> -->
+
+            <!-- 依赖范围-scope,默认为compile -->
+            <!-- <scope>compile</scope> -->
+
+            <!-- 是否可选-optional,默认为false -->
+            <!-- <optional>false</optional> -->
+
+            <!-- 排除(传递的)依赖 -->
+            <!-- <exclusions></exclusions> -->
+
+        </dependency>
+
+        <!-- json处理器 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <!-- 包括了若干google的java项目广泛依赖的核心库 -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+        </dependency>
+
+        <!-- slf4j的核心包(它只是一套接口) -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+        <!-- slf4j对log4j12的支持包,把slf4j的接口转嫁到log4j上去实现 -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+        </dependency>
+    </dependencies>
+
+</project>
