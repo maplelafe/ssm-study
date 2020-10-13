@@ -57,7 +57,7 @@
         <druid.version>1.0.28</druid.version>
 
         <!-- junit(测试)版本号 -->
-        <junit.version>4.11</junit.version>
+        <junit.version>4.13.1</junit.version>
 
         <!-- 日志版本号 -->
         <slf4j.version>1.7.21</slf4j.version>
